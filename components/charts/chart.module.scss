@@ -1,0 +1,30 @@
+@import '../../styles/mixin.scss';
+
+.containerContainer {
+
+  overflow-x: auto;
+  background-color: #331233;
+  border-radius: 50px;
+  padding: 2rem;
+}
+
+.error {
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+  @include mq('mobile') {
+    font-size: 24px;
+  }
+}
+
+.container {
+  position: relative;
+  @include mq('mobile') {
+    width: 40.25rem;
+    margin-right: -15rem;
+  }
+  @include mq('tablet') {
+    width: 58.25rem;
+    margin-left: 4rem;
+  }
+}

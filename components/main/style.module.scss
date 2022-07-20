@@ -1,0 +1,106 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixin.scss';
+
+.main {
+  margin-top: 5rem;
+  min-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countryName {
+  color: $country-color;
+}
+
+.title {
+  color: $color;
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+  margin-right: 10px;
+
+  @include mq('mobile') {
+    font-size: $title-mobile-font-size;
+    text-align: center;
+  }
+}
+
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 9rem 0 2rem;
+}
+
+.button {
+  padding: 15px 30px;
+  margin-right: 10px;
+  background: transparent;
+  font-weight: 500;
+  border: 2px solid;
+  cursor: pointer;
+
+  @include mq('mobile') {
+    padding: 15px;
+  }
+}
+
+.cases {
+  color: $tangerine-color;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    background-color: $tangerine-color;
+    color: $color;
+  }
+}
+
+.recovered {
+  color: $green-color;
+
+  &:focus,
+  t &:hover {
+    outline: none;
+    background-color: $green-color;
+    color: $color;
+  }
+}
+
+.deaths {
+  color: $red-color;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    background-color: $red-color;
+    color: $color;
+  }
+}
+
+.protectMain {
+  align-items: flex-start;
+  margin-top: 5rem;
+}
+
+.protectTitle {
+  font-size: 28px;
+  text-align: center;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+
+  @include mq('tablet') {
+    max-width: 1040px;
+  }
+}

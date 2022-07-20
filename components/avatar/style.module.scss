@@ -1,0 +1,12 @@
+@import '../../styles/mixin.scss';
+@import '../../styles/variables.scss';
+
+.photo {
+  height: $photo-height;
+  width: $photo-width;
+  object-fit: contain;
+  @include mq('mobile') {
+    height: 70px;
+    width: 70px;
+  }
+}
